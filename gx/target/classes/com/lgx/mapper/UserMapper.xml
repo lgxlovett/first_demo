@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lgx.dao.UserDao" >
+          
+          <insert id="addUser">
+          	insert into gx.sys_user(name,password,email,last_logintime,void_flag,create_user,create_date,update_user,update_date) values(#{name},#{password},#{email},#{lastLoginTime},#{voidFlag},#{createUser},#{createDate},#{updateUser},#{updateDate})
+          </insert>
+          
+</mapper>
